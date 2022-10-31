@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ApiService } from './../../services/api.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-galery',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopGaleryComponent implements OnInit {
 
-  constructor() { }
+  @Input() galeryType?:any
+  animes:any[]=[]
+
+
+
+
+  constructor(private apiService:ApiService) { }
 
   ngOnInit(): void {
+
   }
+
 
 }
