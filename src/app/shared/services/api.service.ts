@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+
   url_week:string="https://kitsu.io/api/edge/trending/anime?limit=5"
   url_emision:string="https://kitsu.io/api/edge/anime?filter%5Bstatus%5D=current&page%5Blimit%5D=5&sort=-user_count"
   url_masEsperados:string="https://kitsu.io/api/edge/anime?filter%5Bstatus%5D=upcoming&page%5Blimit%5D=5&sort=-user_count"
@@ -17,27 +18,31 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getWeek(){
-    return this.http.get(this.url_week)
+    return this.http.get(this.url_week);
   }
+
   getEmision(){
-    return this.http.get(this.url_emision)
+    return this.http.get(this.url_emision);
   }
+
   getEsperados(){
-    return this.http.get(this.url_masEsperados)
+    return this.http.get(this.url_masEsperados);
   }
+
   getPopulares(){
-    return this.http.get(this.url_pupulares)
+    return this.http.get(this.url_pupulares);
   }
+
   getCategorias(){
-    return this.http.get(this.url_categorias)
+    return this.http.get(this.url_categorias);
   }
+
   getEvaluados(){
-    return this.http.get(this.url_evaluados)
+    return this.http.get(this.url_evaluados);
   }
+
   getAnimes(){
-    return this.http.get(this.url_animes)
+    return this.http.get(this.url_animes);
   }
-
-
 
 }

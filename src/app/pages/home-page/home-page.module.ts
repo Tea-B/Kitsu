@@ -15,8 +15,6 @@ import { TopGaleryComponent } from 'src/app/shared/components/top-galery/top-gal
   imports: [
     CommonModule,
     HomePageRoutingModule,
-
-
   ]
 })
 export class HomePageModule { }
