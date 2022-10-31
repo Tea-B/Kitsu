@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TopGaleryComponent } from './shared/components/top-galery/top-galery.component';
+// import { TopGaleryComponent } from './shared/components/top-galery/top-galery.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TopGaleryComponent
+    // TopGaleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
