@@ -18,6 +18,9 @@ import { TopGaleryComponent } from './shared/components/top-galery/top-galery.co
     AppRoutingModule,
     HttpClientModule
   ],
+  exports: [
+    TopGaleryComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

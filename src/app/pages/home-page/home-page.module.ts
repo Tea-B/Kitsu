@@ -1,3 +1,4 @@
+import { TopGaleryComponent } from './../../shared/components/top-galery/top-galery.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +8,8 @@ import { HomePageComponent } from './home-page.component';
 
 @NgModule({
   declarations: [
-    HomePageComponent
+    HomePageComponent,
+    TopGaleryComponent
   ],
   imports: [
     CommonModule,
