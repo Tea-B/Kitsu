@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  galeryType: any [] = ["week", "emision", "esperados"]
+  galeryTypes: any [] = ["week", "emision", "esperados", "evaluados", "populares"];
 
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }
+
