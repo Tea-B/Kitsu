@@ -1,4 +1,3 @@
-import { ApiService } from './../../shared/services/api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,16 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  galeryWeek:any[]=[]
 
-  constructor(private apiService: ApiService) { }
+  galeryTypes: any [] = ["week", "emision", "esperados", "evaluados", "populares"];
+
+  constructor() { }
 
   ngOnInit(): void {
 
-
-}
-
-
-
+  }
 }
 
