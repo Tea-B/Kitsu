@@ -1,3 +1,6 @@
+import { AllAnimesComponent } from './../../shared/components/all-animes/all-animes.component';
+import { AppModule } from './../../app.module';
+import { TopGaleryComponent } from 'src/app/shared/components/top-galery/top-galery.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,11 +10,14 @@ import { AnimePageComponent } from './anime-page.component';
 
 @NgModule({
   declarations: [
-    AnimePageComponent
+    AnimePageComponent,
+    AllAnimesComponent
+
   ],
   imports: [
     CommonModule,
-    AnimePageRoutingModule
+    AnimePageRoutingModule,
+
   ]
 })
 export class AnimePageModule { }
