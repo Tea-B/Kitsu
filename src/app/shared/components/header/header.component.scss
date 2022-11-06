@@ -1,0 +1,47 @@
+.container-fluid{
+width: 100%;
+background-color:#402F3F ;
+display: flex;
+flex-direction: row;
+height: 25px ;
+align-items: center;
+position: fixed;
+top: 0;
+z-index: 100;
+
+  &--container{
+    display: flex;
+    flex-direction: row;
+
+    &--navbar-brand{
+    width: 17px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    color:white;
+    h2{
+      font-size: 12px;
+      align-content: center;
+      margin:0;
+      margin-left: 2px;
+
+    }
+
+
+  }
+
+  }
+
+
+}
+
+
+
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}

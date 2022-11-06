@@ -1,14 +1,10 @@
-
-
+<div class="container">
+<h1>Todos los animes</h1>
 <div class="container">
   <!-- <div (mouseover)="hover()" (mouseout)="hoverOut()" *ngFor="let anime of animes" class="container--card"> -->
-    <div *ngFor="let anime of animes" class="container--card">
+    <div *ngFor="let anime of animes" class="card">
     <img  routerLink="" src="{{anime.image}}" alt="{{anime.title}}">
-    <div class="info {{infoAnime}}">{{anime.title}}{{anime.synopsis}}</div>
+    <!-- <div class="info {{infoAnime}}">{{anime.title}}{{anime.synopsis}}</div> -->
   </div>
 </div>
-
-
-
-
-
+</div>
